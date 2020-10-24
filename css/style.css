@@ -1,0 +1,94 @@
+/*==========RESET==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+/*==========ESTRUTURA DO GRID==========*/
+.estrutura{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "aside content content"
+    "footer footer footer"
+    ;
+}
+.header {grid-area: header;}
+.content {grid-area: content;}
+.aside {grid-area: aside;}
+.footer {grid-area: footer;}
+/*==========HEADER==========*/
+.header {
+    display: grid;
+    grid-template-columns: 280px 580px 280px;
+    background-image: url(../imagens/fundo.png); background-size: contain; padding: 50px;}
+.imagem01{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: -30px;
+}
+.navegacao{
+    grid-column: 2;
+    grid-row: 2;
+}
+.menu {display: flex; position: absolute; top: 110px;}
+.menu li {background-color: #b10333; padding: 15px 18px;}
+.menu li:hover {background-color: #de003e;}
+.menu li a {color: white;}
+.imagem02{
+    grid-column: 3;
+    margin-top: -50px; margin-left: -10px;}
+/*==========ASIDE==========*/
+.aside {width: 190px; margin-left: 325px; margin-right: 15px; margin-top: 10px;}
+.aside01, .aside02 {background-image: url(../imagens/fundo-caixa.png); padding: 5px;}
+.aside02 {margin-top: 10px;}
+input {padding: 5px; width: 125px; font-size: 0.9em; background-color: #fff;}
+button {width: 80px; color: #fff; background-color: #b10333; border: 2px solid #870529; padding: 5px; font-size: 0.9em;}
+h2 {font-size: 1em; background: #294c71; color: #fff; padding: 5px;}
+ul, form {background: white; margin-top: 5px;}
+label:hover {cursor: pointer;}
+.entrevistados li a{font-size: 0.9em; padding: 3px; display: block; line-height: 30px; color: #000;
+border-bottom: 1px solid #f3f3f3;}
+.entrevistados li a:hover {background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center; padding-left: 20px;
+color: #a1a1a1;}
+/*==========CONTENT==========*/
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-right: 250px; margin-top: 10px;}
+.content01, .content02, .content03, .content04 {width: 285px; background-image: url(../imagens/fundo-caixa.png);
+padding: 5px;}
+.content01 img, .content02 img, .content03 img, .content04 img {width: 100%;}
+.content01 h3, .content03 h3 {width: fit-content; background-color: #b10333; text-transform: uppercase; font-size: 0.8em;
+padding: 3px;}
+.content01 h3 {color: #fff;}
+.content01 a, .content03 a{ color: #b10333; text-decoration: underline;}
+.content01 a:hover, .content03 a:hover {color: #de003e;}
+.content02{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 10px;
+}
+.content03{
+    grid-column: 2;
+    margin-left: 15px;
+}
+.content04 {margin-top: 10px; margin-left: 15px;}
+.fundo-branco {background-color: white; padding: 10px;}
+.fundo-branco02 {display: block; margin-left: 5px;}
+.content02 h2, .content04 h2 {margin-bottom: 5px;}
+.content02 img, .content04 img {width: 100px;}
+.content02 p, .content04 p {color: #000; font-size: 0.7em;}
+.content02 h3, .content04 h3 {text-transform: uppercase; font-size: 0.8em; color: #3e7ab9;}
+.content02 .fundo-branco, .content04 .fundo-branco {display: flex; border-bottom: 1px solid #ccc;}
+.content02 .fundo-branco:hover, .content04 .fundo-branco:hover {background-color: #eee;}
+/*==========FOOTER==========*/
+.footer {background: #294c71; padding: 20px; margin-top: 30px;}
+.footer p {color: #fff; text-align: center;}
