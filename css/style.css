@@ -44,3 +44,16 @@ body{
 .imagem02{
     grid-column: 3;
     margin-top: -50px; margin-left: -10px;}
+/*==========ASIDE==========*/
+.aside {width: 190px; margin-left: 325px; margin-right: 15px; margin-top: 10px;}
+.aside01, .aside02 {background-image: url(../imagens/fundo-caixa.png); padding: 5px;}
+.aside02 {margin-top: 10px;}
+input {padding: 5px; width: 125px; font-size: 0.9em; background-color: #fff;}
+button {width: 80px; color: #fff; background-color: #b10333; border: 2px solid #870529; padding: 5px; font-size: 0.9em;}
+h2 {font-size: 1em; background: #294c71; color: #fff; padding: 5px;}
+ul, form {background: white; margin-top: 5px;}
+label:hover {cursor: pointer;}
+.entrevistados li a{font-size: 0.9em; padding: 3px; display: block; line-height: 30px; color: #000;
+border-bottom: 1px solid #f3f3f3;}
+.entrevistados li a:hover {background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center; padding-left: 20px;
+color: #a1a1a1;}
