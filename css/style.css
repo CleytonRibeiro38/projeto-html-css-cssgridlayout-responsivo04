@@ -112,6 +112,15 @@ color: #a1a1a1;}
         margin-left: 0; 
         margin-right: 0; 
         margin-top: 10px;
+        width: 100%;
+    }
+    input[type="email"]{
+        width: 100%;
+    }
+    button{
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
     }
 }
 /*==========CONTENT==========*/
@@ -151,9 +160,15 @@ padding: 3px;}
         grid-template-columns: 1fr;
         margin-right: 0;
     }
+    .content01, .content02, .content03, .content04{
+        width: 100%;
+    }
     .content03{
         grid-column: 1;
         margin-left: 0;
+    }
+    .content04{
+        margin-left: 0
     }
 }
 /*==========FOOTER==========*/
