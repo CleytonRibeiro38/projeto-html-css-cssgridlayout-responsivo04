@@ -97,12 +97,13 @@ body{
     .header{
         display: flex;
         justify-content: space-between;
-        padding: 40px;
+        padding: 5px;
     }
     .menu{
         flex-direction: column;
         position: relative;
-        top: -35px;
+        top: 0;
+        left: 20px;
     }
     .menu li{
         text-align: center;
@@ -110,7 +111,7 @@ body{
     header img:first-child{
         width: 152px;
         height: 66px;
-        margin-left: -35px;
+        margin-left: 0;
         margin-bottom: 10px;
         align-self: center;
     }
@@ -120,10 +121,13 @@ body{
         margin-top: -35px;
         align-self: center;
     }
+    .imagem02{
+        margin-left: 35px;
+    }
 }
 /*==========ASIDE==========*/
 .aside {display: grid; width: 190px; margin-left: 325px; margin-right: 15px; margin-top: 10px;}
-.aside01, .aside02 {background-image: url(../imagens/fundo-caixa.png); padding: 5px;}
+.aside01, .aside02 {background: url(../imagens/fundo-caixa.png); padding: 5px;}
 .aside02 {margin-top: 10px;}
 input {padding: 5px; width: 125px; font-size: 0.9em; background-color: #fff;}
 button {width: 80px; color: #fff; background-color: #b10333; border: 2px solid #870529; padding: 5px; font-size: 0.9em;}
@@ -151,7 +155,12 @@ color: #a1a1a1;}
         margin-top: 10px;
     }
 }
-
+@media screen and (min-width: 501px) and (max-width: 750px){
+    .aside{
+        display: block;
+        margin-left: 0;
+    }
+}
 /*==========CONTENT==========*/
 .content{
     display: grid;
@@ -198,6 +207,20 @@ padding: 3px;}
     }
     .content04{
         margin-left: 0
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 750px){
+    .content{
+        grid-template-columns: 2fr;
+        margin-right: 0;
+    }
+    .content01, .content02{
+        width: 100%;
+    }
+    .content03, .content04{
+        grid-column: 1;
+        margin-left: 0;
+        width: 100%;
     }
 }
 /*==========FOOTER==========*/
