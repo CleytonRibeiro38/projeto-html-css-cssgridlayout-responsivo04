@@ -38,6 +38,20 @@ body{
     .aside {grid-area: aside;}
     .footer {grid-area: footer;}
 }
+@media screen and (min-width: 751px) and (max-width: 1000px){
+    .estrutura{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "aside content content"
+        "footer footer footer"
+        ; 
+    }
+    .header {grid-area: header;}
+    .content {grid-area: content;}
+    .aside {grid-area: aside;}
+    .footer {grid-area: footer;}
+}
 /*==========HEADER==========*/
 .header {
     display: grid;
@@ -125,6 +139,19 @@ body{
         margin-left: 35px;
     }
 }
+@media screen and (min-width: 751px) and (max-width: 1000px){
+    .header{
+        width: 100vw;
+    }
+    .navegacao, .imagem01{
+        grid-column: 1;
+        margin-left: -25px;
+    }
+    .imagem02{
+        grid-column: 3;
+        margin-left: -340px;
+    }
+}
 /*==========ASIDE==========*/
 .aside {display: grid; width: 190px; margin-left: 325px; margin-right: 15px; margin-top: 10px;}
 .aside01, .aside02 {background: url(../imagens/fundo-caixa.png); padding: 5px;}
@@ -159,6 +186,16 @@ color: #a1a1a1;}
     .aside{
         display: block;
         margin-left: 0;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 1000px){
+    .aside{
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
+    .aside01, .aside02{
+        margin-right: 0px;
     }
 }
 /*==========CONTENT==========*/
@@ -220,6 +257,15 @@ padding: 3px;}
     .content03, .content04{
         grid-column: 1;
         margin-left: 0;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 1000px){
+    .content{
+        margin-left: -20px;
+        width: 100%;
+    }
+    .content01, .content02, .content03, .content04{
         width: 100%;
     }
 }
